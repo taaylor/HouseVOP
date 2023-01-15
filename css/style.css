@@ -1,5 +1,6 @@
 @import "../lib/bootstrap5/bootstrap-reboot.min.css";
 @import "../lib/bootstrap5/bootstrap-grid.min.css";
+@import "../font/icomoon/style.css";
 
 .font1 {
     font-family: 'Playfair Display', serif !important;
@@ -9,4 +10,15 @@
 }
 .font3 {
     font-family: 'Roboto', sans-serif !important;
+}
+.text-accent{
+    color: #D4C17F;
+}
+
+body{
+    font-size: 16px;
+    min-width: 280px;
+    background-color: #242b33;
+    overflow-x: hidden;
+    color: #fff;
 }
