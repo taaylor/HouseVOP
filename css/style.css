@@ -1,0 +1,12 @@
+@import "../lib/bootstrap5/bootstrap-reboot.min.css";
+@import "../lib/bootstrap5/bootstrap-grid.min.css";
+
+.font1 {
+    font-family: 'Playfair Display', serif !important;
+}
+.font2 {
+    font-family: 'Raleway', sans-serif !important;
+}
+.font3 {
+    font-family: 'Roboto', sans-serif !important;
+}
