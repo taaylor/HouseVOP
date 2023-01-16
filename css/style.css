@@ -1,6 +1,7 @@
 @import "../lib/bootstrap5/bootstrap-reboot.min.css";
 @import "../lib/bootstrap5/bootstrap-grid.min.css";
 @import "../font/icomoon/style.css";
+@import "components/header.css";
 
 .font1 {
     font-family: 'Playfair Display', serif !important;
@@ -22,3 +23,4 @@ body{
     overflow-x: hidden;
     color: #fff;
 }
+
