@@ -1,6 +1,83 @@
 .header {
+    position: relative; /* Элемент позиционируется в соответствии с нормальным потоком документа
+    , а затем смещается относительно самого себя на основе значений top, right, bottomи left. */
     min-height: 840px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: cover; /* Фон растягивается по ширине */
+    background-repeat: no-repeat; 
     background-position: center;
+    /* background-attachment: fixed; Фон фиксируется относительно области просмотра */
+    display: flex;
+    align-items: flex-end;
+}
+
+.header:before {
+    content: '';
+    position: absolute; /* Элемент удаляется из обычного потока документов, и для него не создается место в макете страницы. */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%);
+}
+
+.header__content{
+    position: relative;
+    z-index: 2;   
+    text-align: center;
+    max-width: 582px;
+    margin: auto;
+}
+
+.header__contacts{
+    padding-top: 340px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__contacts-item{
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: all .09s ease-out; /*скорость выделения элемента при наведении*/
+}
+
+.header__contacts-item:hover{
+    color: #D4C17F;
+}
+
+.header__contacts-item:hover [class*="icon-"]:before{
+    color: #D4C17F;
+}
+
+.header__contacts-item [class*="icon-"] {
+    margin-right: 15px;
+    transition: all .09s ease-out;
+}
+
+.header__contacts-item .icon-map:before{
+    font-size: 21px;
+}
+
+.header__mouse-effect{
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.header__mouse-effect-mouse{
+    animation: downUp 0.9s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
+}
+
+@keyframes downUp{
+    from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(5px);
+    }
 }

@@ -16,11 +16,20 @@
     color: #D4C17F;
 }
 
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    color: #D4C17F;
+
+}
+
 body{
     font-size: 16px;
     min-width: 280px;
     background-color: #242b33;
     overflow-x: hidden;
     color: #fff;
+    min-height: 900vh;
 }
 
