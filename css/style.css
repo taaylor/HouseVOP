@@ -2,6 +2,9 @@
 @import "../lib/bootstrap5/bootstrap-grid.min.css";
 @import "../font/icomoon/style.css";
 @import "components/header.css";
+@import "components/navbar.css";
+@import "components/section.css";
+@import "components/other.css";
 
 .font1 {
     font-family: 'Playfair Display', serif !important;
@@ -24,6 +27,11 @@ h1 {
 
 }
 
+.link_unstyled{
+    color: #fff;
+    text-decoration: none;
+}
+
 body{
     font-size: 16px;
     min-width: 280px;
@@ -33,3 +41,10 @@ body{
     min-height: 900vh;
 }
 
+a:hover{
+    color: #D4C17F;
+}
+
+img{
+    width: 100%;
+}

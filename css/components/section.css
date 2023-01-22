@@ -1,0 +1,21 @@
+.section{
+    position: relative;
+    padding: 180px 0;
+}
+.section__number{
+    position: absolute;
+    top: 0;
+    left: 258px;
+    font-weight: 700;
+    opacity: 0.02;
+    font-size: 400px;
+    line-height: 1;
+}
+.section__number_right{
+    right: 258px;
+    left: unset;
+}
+
+#facts{
+    padding: 120px 0;
+}

@@ -1,0 +1,32 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    padding: 30px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__menu{
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar__menu li{
+    display: inline-block;
+}
+.navbar__menu-link{
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    transition: all .09s ease-out;
+    padding: 20px;
+}
