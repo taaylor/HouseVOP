@@ -1,7 +1,15 @@
 .section{
     position: relative;
     padding: 180px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+.section_title{
+    padding-bottom: 100px;
+}
+
 .section__number{
     position: absolute;
     top: 0;
@@ -10,12 +18,37 @@
     opacity: 0.02;
     font-size: 400px;
     line-height: 1;
+
+    z-index: -1;
 }
 .section__number_right{
     right: 258px;
     left: unset;
 }
 
+.section__number_middle{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 #facts{
     padding: 120px 0;
+}
+#our_rooms{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#cta::before{
+    content: '';
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), 
+    linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9));
+}
+.h2_section_cta{
+    margin-bottom: 50px;
 }
