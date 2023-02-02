@@ -47,3 +47,26 @@
   font-weight: 700;
   color: #D4C17F !important;
 }
+
+@media (max-width: 992px){
+    .footer{
+        text-align: center;
+    }
+
+    .footer__menu{
+        padding-bottom: 15px;
+    }
+
+    .footer .brand{
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    .footer__contacts{
+        padding-top: 15px;
+    }
+
+    .footer ul li{
+        font-size: 18px;
+    }
+}

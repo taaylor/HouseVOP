@@ -82,3 +82,41 @@
         transform: translateY(5px);
     }
 }
+
+@media (max-width: 1200px){
+    .header{
+        min-height: 700px;
+    }
+    .header__content{
+        margin-top: 230px;
+    }
+    h1{
+        font-size: 44px !important;
+    }
+}
+
+@media (max-width: 576px){
+    .header:before{
+        background-image: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), linear-gradient(0deg, rgba(36, 43, 51, 0.78), rgba(36, 43, 51, 0.78));
+    }
+    .header{
+        min-height: 435px;
+    }
+    .header__mouse-effect{
+        display: none;
+    }
+    .header__contacts{
+        margin-top: 89px;
+        padding-top: 0;
+        padding-bottom: 30px;
+        flex-flow: column-reverse wrap;
+        align-items: center;
+    }
+    .header__contacts-item{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .header__contacts-item:last-child{
+        margin-bottom: 15px;
+    }
+}

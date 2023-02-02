@@ -49,6 +49,9 @@ p{
     margin-bottom: 0;
 }
 
+.fz11{
+    font-size: 11px;
+}
 
 .link_unstyled{
     color: #fff;
@@ -69,4 +72,27 @@ a:hover{
 
 img{
     width: 100%;
+}
+
+
+@media (max-width: 1200px) {
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px){
+    h1{
+        font-size: 28px !important;
+        line-height: 37px;
+    }
+    h2{
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .fz-lg-13{
+        font-size: 13px;
+    }
 }
