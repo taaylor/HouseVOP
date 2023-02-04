@@ -4,6 +4,19 @@
     top: 0;
     z-index: 999;
     padding: 30px 0;
+    transition: all .39s ease-out;
+}
+
+.navbar_scrolled {
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	background-color: #242B33;
+	box-shadow: 0 12px 11px rgba(0,0,0,.1);
+}
+
+.navbar_scrolled .brand__main {
+	width: 114px;
 }
 
 .navbar__toggler{
@@ -86,11 +99,16 @@
         width: 100%;
         height: auto;
         padding: 108px 0 40px 0;
+        transition: all .39s ease-out;
     }
 
     .mobile_wrap_show{
         top: 0;
+        transition: all .50s ease-out;
     }
+    /* .mobile_wrap_show::before, .mobile_wrap_show::after{
+        transition-delay: 0s, 0.3s;
+    } */
 
     .navbar__toggler{
         display: block;
